@@ -1,2 +1,2 @@
 # JR2023study
-NONE
+This project is about HTML+CSS3+JS
