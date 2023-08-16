@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      article {
+        width: 300px;
+        height: 300px;
+        border: silver 5px solid;
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
+      }
+      div{
+      
+        background: blue;
+        background-clip: content-box;
+        border: solid 1px blueviolet;
+        box-sizing: border-box;
+        padding: 10px;
+        color: white;
+        font-size: 25px;
+      }
+      /* 使用偏移量 */
+      div:first-child{
+        grid-row: 3/4;
+        grid-column: 2/3;
+      }
+
+    </style>
+  </head>
+  <body>
+    <article>
+      <div>1</div>
+    </article>
+  </body>
+</html>

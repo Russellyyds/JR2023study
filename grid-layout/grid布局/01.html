@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      article {
+        display: grid;
+        height: 150px;
+        width: 300px;
+        border: 1px solid black;
+        /* grid-template-rows: repeat(2,1fr);
+            grid-template-columns: repeat(5,20%); */
+        /* grid-template-columns: repeat(auto-fill,100px);  自动填充
+            grid-template-rows: repeat(auto-fill,100px); */
+
+        /* 按照份数填充 比如绘制三份，每一份按照等比例填充*/
+        /* grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(3,1fr); */
+
+        /* grid-template-rows: 1fr 2fr 1fr; */
+        /* grid-template-columns: 1fr 2fr 1fr; */
+
+        grid-template-rows: repeat(2, minmax(50px, 100px));
+        grid-template-columns: repeat(5, 1fr);
+      }
+      div {
+        border: 1px solid black;
+        box-sizing: border-box;
+        background: blue;
+        /* background-clip: content-box;  调整间距 也可以用margin margin: 2px;来控制*/
+
+        /* 可以用这个来控制间距 */
+        /* row-gap: 10px;
+        column-gap: 20px;
+        gap: 10px 20px; */
+
+        /* padding: 10px; */
+        /* display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 25%;
+            left: 25%; */
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </article>
+  </body>
+</html>
